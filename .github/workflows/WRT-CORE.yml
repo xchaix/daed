@@ -148,8 +148,7 @@ jobs:
       - name: Update Feeds
         run: |
           cd ./wrt/
-         sed -i 's/git.openwrt.org\/openwrt\/openwrt.git/github.com\/openwrt\/openwrt.git/g' feeds.conf.default
-        sed -i 's/git.openwrt.org\/openwrt\/packages.git/github.com\/openwrt\/packages.git/g' feeds.conf.default
+        
           ./scripts/feeds update -a
           ./scripts/feeds install -a
 
